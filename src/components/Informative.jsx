@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Logo from '@icons/Logo.png';
 
 import uno from '@icons/otra1.jpeg';
 import tres from '@icons/otra2.jpeg';
@@ -28,9 +27,7 @@ const Informative = () => {
     <>
       <div>
         <div className="bg-slate-200 text-left mt-10 dark:bg-slate-200 h-48">
-          <p className="mt-3 px-10 text-white">
-            <Image className="h-48 w-36" src={Logo} alt="Image-page-init"></Image>
-          </p>
+          <p className="mt-3 px-10 text-white">hola</p>
         </div>
       </div>
       <div>

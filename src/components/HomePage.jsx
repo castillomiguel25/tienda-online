@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Themes from '@components/Theme';
 import Footer from '@components/Footer';
 import Promo from './Promo';
-import Sections from './Sections';
+import Sections from '@components/Sections';
 import Informative from './Informative';
 
 import { Navbar, Button } from 'flowbite-react';
