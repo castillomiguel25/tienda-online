@@ -1,0 +1,6 @@
+.MyOrder {
+  width: 360px;
+  top: 60px;
+  height: calc(100vh - 60px);
+  z-index: 30;
+}
