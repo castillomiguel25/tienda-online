@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import AppContext from '@context/AppContext';
 import MyOrder from '@components/MyOrder';
 import { useDarkModeLogic } from '../hooks/logic';
-import CheckoutSide from '@components/checkoutSideMenu';
+import CheckoutSide from '@components/CheckoutSideMenu';
 import Image from 'next/image';
 
 const Card = ({ data }) => {

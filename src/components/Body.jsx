@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Menu from '@components/Configmenu';
 import ProductTabs from '@components/ProductTabs';
 import Carousels from '@components/Carousel';
-import CheckoutSide from '@components/checkoutSideMenu';
+import CheckoutSide from '@components/CheckoutSideMenu';
 import { useDarkModeLogic } from '../hooks/logic';
 import { Navbar, Button } from 'flowbite-react';
 import Image from 'next/image';
