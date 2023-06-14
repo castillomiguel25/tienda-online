@@ -1,19 +1,33 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-import uno from '@icons/otra1.jpeg';
-import tres from '@icons/otra2.jpeg';
-import dos from '@icons/otra1.jpeg';
-import cuatro from '@icons/otra2.jpeg';
-import cinco from '@icons/otra1.jpeg';
-import seis from '@icons/otra2.jpeg';
-import siete from '@icons/otra1.jpeg';
-import ocho from '@icons/otra2.jpeg';
+// imagenes para sandalias
+import uno from '@icons/san1.webp';
+import tres from '@icons/san2.webp';
+import dos from '@icons/1.jpeg';
+import cuatro from '@icons/2.jpeg';
+import cinco from '@icons/3.jpeg';
+import seis from '@icons/4.jpeg';
+import siete from '@icons/5.jpeg';
+import ocho from '@icons/6.jpeg';
+import nueve from '@icons/7.jpeg';
+
+// imagenes para camizas
+import camiza1 from '@icons/camiza1.webp';
+import camiza2 from '@icons/camiza2.jpg';
+import camiza3 from '@icons/camiza3.jpg';
+import camiza4 from '@icons/camiza4.webp';
+import camiza5 from '@icons/camiza5.jpg';
+
+// imagenes para ropa
+import mujer1 from '@icons/mujer1.webp';
+import mujer2 from '@icons/mujer2.webp';
+import mujer3 from '@icons/mujer3.jpg';
+import mujer4 from '@icons/mujer4.webp';
+import mujer5 from '@icons/mujer5.webp';
 
 const Informative = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
-
-  const photos = [uno, dos, tres, cuatro, cinco, seis, siete, ocho];
 
   const handlePhotoClick = (photo) => {
     setSelectedPhoto(photo);
@@ -23,31 +37,33 @@ const Informative = () => {
     setSelectedPhoto(null);
   };
 
-  return (
-    <>
+  const renderProductSection = (photos, title) => {
+    return (
       <div>
-        <div className="bg-slate-200 text-left mt-10 dark:bg-slate-200 h-48">
-          <p className="mt-3 px-10 text-white">hola</p>
+        <div className="bg-slate-200 text-left dark:bg-slate-300 h-16">
+          <p className="mt-10 px-10 text-black dark:text-black text-5xl">{title}</p>
         </div>
-      </div>
-      <div>
-        <div className="flex flex-wrap -mx-2 mt-10">
-          {photos.map((photo, index) => (
-            <div
-              key={index}
-              className="w-1/4 px-2"
-              onClick={() => handlePhotoClick(photo)}
-              onKeyDown={(event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                  handlePhotoClick(photo);
-                }
-              }}
-              role="button"
-              tabIndex="0"
-            >
-              <Image src={photo} alt={`Foto ${index + 1}`} className="object-cover px-10 h-96 w-full cursor-pointer"></Image>
+        <div className="mt-10">
+          <div className="flex items-center">
+            <div className="flex overflow-x-auto mx-2">
+              {photos.map((photo, index) => (
+                <div
+                  key={index}
+                  className={`flex-none w-1/${photos.length} px-2`}
+                  onClick={() => handlePhotoClick(photo)}
+                  onKeyDown={(event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                      handlePhotoClick(photo);
+                    }
+                  }}
+                  role="button"
+                  tabIndex="0"
+                >
+                  <Image src={photo} alt={`Foto ${index + 1}`} className="object-cover h-96 w-full cursor-pointer" />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
 
           {selectedPhoto && (
             <div
@@ -61,11 +77,19 @@ const Informative = () => {
               role="button"
               tabIndex="0"
             >
-              <Image className="max-h-full max-w-full" src={selectedPhoto} alt="Image-page-init"></Image>
+              <Image className="max-h-full max-w-full" src={selectedPhoto} alt="Image-page-init" />
             </div>
           )}
         </div>
       </div>
+    );
+  };
+
+  return (
+    <>
+      {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], 'Productos Uno')}
+      {renderProductSection([camiza1, camiza2, camiza3, camiza4, camiza5], 'Productos Dos')}
+      {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], 'Productos Tres')}
     </>
   );
 };

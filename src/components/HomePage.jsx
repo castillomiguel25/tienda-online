@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Themes from '@components/Theme';
 import Footer from '@components/Footer';
 import Promo from './Promo';
-import Sections from '@components/Sections';
-import Informative from './Informative';
+import PhotoGallery from './PhotoGallery';
+import Products from './products';
 
 import { Navbar, Button } from 'flowbite-react';
 import Image from 'next/image';
@@ -74,7 +74,7 @@ const Group = () => {
             </h2>
           </div>
           <div className="lg:grid text-center place-items-center mt-3">
-            <Sections />
+            <PhotoGallery />
             <div className="dark:text-white text-black mt-7">
               <h1 className="lg:text-4xl sm:text-1xl font-bold">
                 <strong>Celebra y Comparte Usando Trinity</strong>
@@ -89,7 +89,7 @@ const Group = () => {
         <Promo />
       </div>
       <div className="lg:grid">
-        <Informative />
+        <Products />
       </div>
       <div>
         <Footer />
