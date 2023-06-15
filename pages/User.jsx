@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithRedirect, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore, doc, setDoc } from 'firebase/firestore';
-import firebaseApp from './Callfirebase/firebase';
+import firebaseApp from '../firebase';
 import Link from 'next/link';
 import { Button } from 'flowbite-react';
 import uno from '@icons/one.webp';
