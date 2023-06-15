@@ -62,10 +62,13 @@ const Group = () => {
       </Navbar>
 
       <div className="bg-neutral-50 py-10 text-neutral-800 dark:bg-emerald-500 dark:text-neutral-200">
-        <div className="grid place-items-center mb-5">
+        <div className="flex px-10 mb-5 md:hidden">
           <Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <div className="mt-3 ml-5">
+            <Select />
+          </div>
         </div>
-        <h3 className=" text-3xl text-center font-bold px-10">{translated.news.subtitle}</h3>
+        <h3 className=" text-3xl text-center font-bold px-10 md:mt-10 mb-10">{translated.news.subtitle}</h3>
         <div className="grid place-items-center">
           <div className="hidden md:block">
             <Image src={uno} alt="Image-page-init"></Image>
@@ -86,7 +89,7 @@ const Group = () => {
               <h1 className="lg:text-4xl sm:text-1xl font-bold">
                 <strong>Celebra y Comparte Usando Trinity</strong>
               </h1>
-              <p className="lg:text-2xl sm:text-1xl mt-3">Aprovecha Nuestras Ofertas Para Estar a la Moda</p>
+              <p className="lg:text-2xl sm:text-1xl mt-3 px-10">Aprovecha Nuestras Ofertas Para Estar a la Moda</p>
             </div>
             <div className="px-10">
               <Button className="bg-indigo-500 text-center mt-10 dark:bg-emerald-500">hacer Pedido</Button>

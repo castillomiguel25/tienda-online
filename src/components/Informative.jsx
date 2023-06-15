@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { FaTimes } from 'react-icons/fa';
 
 // imagenes para sandalias
 import uno from '@icons/san1.webp';
