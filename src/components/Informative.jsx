@@ -13,18 +13,18 @@ import ocho from '@icons/6.jpeg';
 import nueve from '@icons/7.jpeg';
 
 // imagenes para camizas
-import camiza1 from '@icons/camiza1.webp';
-import camiza2 from '@icons/camiza2.jpg';
-import camiza3 from '@icons/camiza3.jpg';
-import camiza4 from '@icons/camiza4.webp';
-import camiza5 from '@icons/camiza5.jpg';
+import hola1 from '@icons/hola1.jpeg';
+import hola2 from '@icons/hola2.jpeg';
+import hola3 from '@icons/hola3.jpeg';
+import hola4 from '@icons/hola4.jpeg';
+import hola5 from '@icons/hola5.jpeg';
 
 // imagenes para ropa
-import mujer1 from '@icons/mujer1.webp';
-import mujer2 from '@icons/mujer2.webp';
-import mujer3 from '@icons/mujer3.jpg';
-import mujer4 from '@icons/mujer4.webp';
-import mujer5 from '@icons/mujer5.webp';
+import mujer1 from '@icons/8.jpeg';
+import mujer2 from '@icons/9.jpeg';
+import mujer3 from '@icons/10.jpeg';
+import mujer4 from '@icons/11.jpeg';
+import mujer5 from '@icons/12.jpeg';
 
 const Informative = () => {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
@@ -88,8 +88,8 @@ const Informative = () => {
   return (
     <div className="mb-10 sm:text-1xl">
       {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], 'Sandalias')}
-      {renderProductSection([camiza1, camiza2, camiza3, camiza4, camiza5], 'Ropa para Caballeros')}
-      {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], 'Ropa para Damas')}
+      {renderProductSection([hola1, hola2, hola3, hola4, hola5], 'Ropa para Caballeros')}
+      {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], 'Lo mas Nuevo...')}
     </div>
   );
 };
