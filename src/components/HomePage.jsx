@@ -8,6 +8,7 @@ import Products from './products';
 import { Navbar, Button } from 'flowbite-react';
 import Image from 'next/image';
 import uno from '@icons/nike.webp';
+import logo from '@icons/logo.png';
 
 import { useRouter } from 'next/router';
 import es from '../../translated/es';
@@ -61,19 +62,22 @@ const Group = () => {
       </Navbar>
 
       <div className="bg-neutral-50 py-10 text-neutral-800 dark:bg-emerald-500 dark:text-neutral-200 mt-10">
-        <h3 className="mb-8 text-3xl text-center font-bold">{translated.news.subtitle}</h3>
+        <h3 className=" text-3xl text-center font-bold px-10">{translated.news.subtitle}</h3>
         <div className="grid place-items-center">
-          <div className="">
+          <div className="hidden md:block">
             <Image src={uno} alt="Image-page-init"></Image>
+          </div>
+          <div className="md:hidden ">
+            <Image src={logo} alt="logo"></Image>
           </div>
         </div>
         <div>
-          <div className="mt-5 place-items-left px-10">
+          <div className="place-items-left px-10">
             <h2>
               <strong>{translated.news.first}</strong>
             </h2>
           </div>
-          <div className="lg:grid text-center place-items-center mt-3 px-10">
+          <div className="lg:grid text-center place-items-center mt-3">
             <PhotoGallery />
             <div className="dark:text-white text-black mt-7">
               <h1 className="lg:text-4xl sm:text-1xl font-bold">
@@ -81,7 +85,9 @@ const Group = () => {
               </h1>
               <p className="lg:text-2xl sm:text-1xl mt-3">Aprovecha Nuestras Ofertas Para Estar a la Moda</p>
             </div>
-            <Button className="bg-indigo-500 text-center mt-10 dark:bg-emerald-500">hacer Pedido</Button>
+            <div className="px-10">
+              <Button className="bg-indigo-500 text-center mt-10 dark:bg-emerald-500">hacer Pedido</Button>
+            </div>
           </div>
         </div>
       </div>

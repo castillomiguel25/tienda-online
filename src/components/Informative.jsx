@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { FaTimes } from 'react-icons/fa';
 
 // imagenes para sandalias
 import uno from '@icons/san1.webp';
@@ -40,8 +41,8 @@ const Informative = () => {
   const renderProductSection = (photos, title) => {
     return (
       <div>
-        <div className="bg-slate-200 text-left dark:bg-slate-300 h-16">
-          <p className="mt-10 px-10 text-black dark:text-black text-5xl">{title}</p>
+        <div className="text-left">
+          <p className="mt-10 px-10  dark:bg-slate-300 bg-slate-200 text-black dark:text-black text-3xl">{title}</p>
         </div>
         <div className="mt-10">
           <div className="flex items-center">
@@ -60,6 +61,10 @@ const Informative = () => {
                   tabIndex="0"
                 >
                   <Image src={photo} alt={`Foto ${index + 1}`} className="object-cover h-96 w-full cursor-pointer" />
+                  <button className="absolute top-2 right-2 text-gray-500 hover:text-red-500 focus:outline-none">
+                    holaaaaaa
+                    <FaTimes size={20} />
+                  </button>
                 </div>
               ))}
             </div>
@@ -86,10 +91,10 @@ const Informative = () => {
   };
 
   return (
-    <div className="mb-10">
-      {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], 'Productos Uno')}
-      {renderProductSection([camiza1, camiza2, camiza3, camiza4, camiza5], 'Productos Dos')}
-      {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], 'Productos Tres')}
+    <div className="mb-10 sm:text-1xl">
+      {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], 'Sandalias')}
+      {renderProductSection([camiza1, camiza2, camiza3, camiza4, camiza5], 'Ropa para Caballeros')}
+      {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], 'Ropa para Damas')}
     </div>
   );
 };
