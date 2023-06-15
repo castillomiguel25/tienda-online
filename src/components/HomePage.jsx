@@ -73,7 +73,7 @@ const Group = () => {
               <strong>{translated.news.first}</strong>
             </h2>
           </div>
-          <div className="lg:grid text-center place-items-center mt-3">
+          <div className="lg:grid text-center place-items-center mt-3 px-10">
             <PhotoGallery />
             <div className="dark:text-white text-black mt-7">
               <h1 className="lg:text-4xl sm:text-1xl font-bold">
@@ -88,10 +88,10 @@ const Group = () => {
       <div className="lg:grid">
         <Promo />
       </div>
-      <div className="lg:grid">
+      <div className="lg:grid mb-10">
         <Products />
       </div>
-      <div>
+      <div className="mt-10">
         <Footer />
       </div>
     </div>

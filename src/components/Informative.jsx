@@ -86,11 +86,11 @@ const Informative = () => {
   };
 
   return (
-    <>
+    <div className="mb-10">
       {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], 'Productos Uno')}
       {renderProductSection([camiza1, camiza2, camiza3, camiza4, camiza5], 'Productos Dos')}
       {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], 'Productos Tres')}
-    </>
+    </div>
   );
 };
 
