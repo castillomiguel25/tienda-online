@@ -61,7 +61,10 @@ const Group = () => {
         </Navbar.Collapse>
       </Navbar>
 
-      <div className="bg-neutral-50 py-10 text-neutral-800 dark:bg-emerald-500 dark:text-neutral-200 mt-10">
+      <div className="bg-neutral-50 py-10 text-neutral-800 dark:bg-emerald-500 dark:text-neutral-200">
+        <div className="grid place-items-center mb-5">
+          <Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        </div>
         <h3 className=" text-3xl text-center font-bold px-10">{translated.news.subtitle}</h3>
         <div className="grid place-items-center">
           <div className="hidden md:block">

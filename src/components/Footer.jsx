@@ -18,7 +18,7 @@ const Footer = () => {
           <Link href="/Form">
             <BsChatDots className="ml-10 mt-2" size={30} />
           </Link>
-          <Link href="/User">
+          <Link href="#">
             <BiLogIn className="ml-10 mt-2" size={30} />
           </Link>
         </div>

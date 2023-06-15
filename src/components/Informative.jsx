@@ -61,10 +61,6 @@ const Informative = () => {
                   tabIndex="0"
                 >
                   <Image src={photo} alt={`Foto ${index + 1}`} className="object-cover h-96 w-full cursor-pointer" />
-                  <button className="absolute top-2 right-2 text-gray-500 hover:text-red-500 focus:outline-none">
-                    holaaaaaa
-                    <FaTimes size={20} />
-                  </button>
                 </div>
               ))}
             </div>
