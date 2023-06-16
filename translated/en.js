@@ -3,6 +3,14 @@ export default {
     title: 'Access',
   },
   news: {
+    contact: 'CONTACT',
+    trinity: 'Celebrate and Share Using Trinity',
+    offert: 'Take advantage of our offers to be fashionable',
+    compra: 'Make an order',
+    disfruta: 'Enjoy...',
+    sandals: 'Sandals',
+    caballeros: 'Mens clothes',
+    nuevo: 'The News...',
     subtitle: 'Pick up your Order in Store.',
     first: 'essential things in your life.',
     initial:

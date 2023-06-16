@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import es from '../../translated/es';
+import en from '../../translated/en';
 
 // imagenes para sandalias
 import uno from '@icons/san1.webp';
@@ -36,6 +39,9 @@ const Informative = () => {
   const handleCloseModal = () => {
     setSelectedPhoto(null);
   };
+
+  const { locale } = useRouter();
+  const translated = locale === 'en' ? en : es;
 
   const renderProductSection = (photos, title) => {
     return (
@@ -87,9 +93,9 @@ const Informative = () => {
 
   return (
     <div className="mb-10 sm:text-1xl">
-      {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], 'Sandalias')}
-      {renderProductSection([hola1, hola2, hola3, hola4, hola5], 'Ropa para Caballeros')}
-      {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], 'Lo mas Nuevo...')}
+      {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], translated.news.sandals)}
+      {renderProductSection([hola1, hola2, hola3, hola4, hola5], translated.news.caballeros)}
+      {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], translated.news.nuevo)}
     </div>
   );
 };

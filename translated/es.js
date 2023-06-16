@@ -3,6 +3,14 @@ export default {
     title: 'Acceso',
   },
   news: {
+    contact: 'CONTÁCTANOS',
+    trinity: 'Celebra y Comparte Usando Trinity',
+    offert: 'Aprovecha Nuestras Ofertas Para Estar a la Moda',
+    compra: 'Hacer Pedido',
+    disfruta: 'Disfruta...',
+    sandals: 'Sandalias',
+    caballeros: 'Ropa para Caballeros',
+    nuevo: 'lo nuevo...',
     subtitle: 'Recoge tu Pedido en Tienda.',
     first: 'cosas esenciales en tu vida.',
     initial:

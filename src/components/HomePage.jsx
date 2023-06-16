@@ -53,7 +53,7 @@ const Group = () => {
             <Themes darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           </Navbar.Link>
           <Navbar.Link href="/Form" className="mt-3">
-            <h3 className="cursor-pointer">CONTÁCTANOS</h3>
+            <h3 className="cursor-pointer">{translated.news.contact}</h3>
           </Navbar.Link>
           <Navbar.Link className="mt-3">
             <Select />
@@ -87,12 +87,12 @@ const Group = () => {
             <PhotoGallery />
             <div className="dark:text-white text-black mt-7">
               <h1 className="lg:text-4xl sm:text-1xl font-bold">
-                <strong>Celebra y Comparte Usando Trinity</strong>
+                <strong>{translated.news.trinity}</strong>
               </h1>
-              <p className="lg:text-2xl sm:text-1xl mt-3 px-10">Aprovecha Nuestras Ofertas Para Estar a la Moda</p>
+              <p className="lg:text-2xl sm:text-1xl mt-3 px-10">{translated.news.offert}</p>
             </div>
             <div className="px-10">
-              <Button className="bg-indigo-500 text-center mt-10 dark:bg-emerald-500">hacer Pedido</Button>
+              <Button className="bg-indigo-500 text-center mt-10 dark:bg-emerald-500">{translated.news.compra}</Button>
             </div>
           </div>
         </div>
