@@ -78,8 +78,8 @@ const Group = () => {
           </div>
         </div>
         <div>
-          <div className="place-items-left px-10">
-            <h2>
+          <div className="px-10">
+            <h2 className="place-items-center text-3xl text-center mt-5">
               <strong>{translated.news.first}</strong>
             </h2>
           </div>
@@ -92,7 +92,12 @@ const Group = () => {
               <p className="lg:text-2xl sm:text-1xl mt-3 px-10">{translated.news.offert}</p>
             </div>
             <div className="px-10">
-              <Button className="bg-indigo-500 text-center mt-10 dark:bg-emerald-500">{translated.news.compra}</Button>
+              <Button
+                href="https://api.whatsapp.com/send?phone=17867958836&text=Hola%2C%20necesito%20ayuda%20voy%20hacer%20una%20compra"
+                className="bg-indigo-500 text-center mt-10 dark:bg-emerald-500"
+              >
+                {translated.news.compra}
+              </Button>
             </div>
           </div>
         </div>
@@ -100,7 +105,7 @@ const Group = () => {
       <div className="lg:grid">
         <Promo />
       </div>
-      <div className="lg:grid mb-10">
+      <div className="lg:grid mb-10 px-10">
         <Products />
       </div>
       <div className="mt-10">

@@ -3,10 +3,10 @@ import { useRouter } from 'next/router';
 import PhotoCard from './PhotoCard';
 import es from '../../translated/es';
 import en from '../../translated/en';
-import uno from '@icons/sect-1.jpeg';
-import tres from '@icons/sect-2.jpeg';
-import cuatro from '@icons/sect-3.jpeg';
-import cinco from '@icons/sect-4.jpeg';
+import uno from '@icons/new6.jpeg';
+import tres from '@icons/new7.jpeg';
+import cuatro from '@icons/new8.jpeg';
+import cinco from '@icons/new9.jpeg';
 
 const Promo = () => {
   const { locale } = useRouter();
