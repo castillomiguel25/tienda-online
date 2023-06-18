@@ -4,6 +4,7 @@ export default {
   },
   news: {
     contact: 'CONTACT',
+    slogan: 'Discover the power of the digital trinity at Trinity: Your all-in-one virtual store',
     trinity: 'Celebrate and Share Using Trinity',
     offert: 'Take advantage of our offers to be fashionable',
     compra: 'Make an order',

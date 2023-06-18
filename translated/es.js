@@ -4,6 +4,7 @@ export default {
   },
   news: {
     contact: 'CONTÁCTANOS',
+    slogan: 'Descubre el poder de la trinidad digital en Trinity: Tu tienda virtual todo en uno',
     trinity: 'Celebra y Comparte Usando Trinity',
     offert: 'Aprovecha Nuestras Ofertas Para Estar a la Moda',
     compra: 'Hacer Pedido',

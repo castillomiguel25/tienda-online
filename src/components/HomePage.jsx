@@ -8,6 +8,7 @@ import Products from './products';
 import { Navbar, Button } from 'flowbite-react';
 import Image from 'next/image';
 import uno from '@icons/nike.webp';
+import shop from '@icons/trinity.jpeg';
 import logo from '@icons/logo.png';
 
 import { useRouter } from 'next/router';
@@ -75,6 +76,9 @@ const Group = () => {
           </div>
           <div className="md:hidden ">
             <Image src={logo} alt="logo"></Image>
+          </div>
+          <div>
+            <h1 className="text-4xl px-10 md:mt-10">{translated.news.slogan}</h1>
           </div>
         </div>
         <div>

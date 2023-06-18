@@ -21,6 +21,12 @@ import hola2 from '@icons/hola2.jpeg';
 import hola3 from '@icons/hola3.jpeg';
 import hola4 from '@icons/hola4.jpeg';
 import hola5 from '@icons/hola5.jpeg';
+import ok1 from '@icons/ok1.jpeg';
+import ok2 from '@icons/ok2.jpeg';
+import ok3 from '@icons/ok3.jpeg';
+import ok4 from '@icons/ok4.jpeg';
+import ok5 from '@icons/ok5.jpeg';
+import ok6 from '@icons/ok6.jpeg';
 
 // imagenes para ropa
 import mujer1 from '@icons/8.jpeg';
@@ -47,7 +53,7 @@ const Informative = () => {
     return (
       <div>
         <div className="text-left">
-          <p className="mt-10 px-10  dark:bg-slate-300 bg-slate-200 text-black dark:text-black text-3xl">{title}</p>
+          <p className="mt-10 px-10 dark:bg-slate-300 bg-slate-200 text-black dark:text-black text-3xl">{title}</p>
         </div>
         <div className="mt-10">
           <div className="flex items-center">
@@ -94,7 +100,7 @@ const Informative = () => {
   return (
     <div className="mb-10 sm:text-1xl">
       {renderProductSection([uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve], translated.news.sandals)}
-      {renderProductSection([hola1, hola2, hola3, hola4, hola5], translated.news.caballeros)}
+      {renderProductSection([hola1, hola2, hola3, hola4, hola5, ok1, ok2, ok3, ok4, ok5, ok6], translated.news.caballeros)}
       {renderProductSection([mujer1, mujer2, mujer3, mujer4, mujer5], translated.news.nuevo)}
     </div>
   );
