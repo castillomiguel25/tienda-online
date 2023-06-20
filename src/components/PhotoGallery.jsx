@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 // imagenes para sandalias
+import sect from '@icons/sect-1.jpeg';
+import sec from '@icons/sect-4.jpeg';
 import shop from '@icons/trinity.jpeg';
 import uno from '@icons/new1.jpeg';
 import tres from '@icons/new2.jpeg';
@@ -79,7 +81,7 @@ const PhotoGallery = () => {
     );
   };
 
-  return <div className="mb-10 sm:text-1xl">{renderProductSection([shop, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince])}</div>;
+  return <div className="mb-10 sm:text-1xl">{renderProductSection([sect, sec, shop, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce, trece, catorce, quince])}</div>;
 };
 
 export default PhotoGallery;
